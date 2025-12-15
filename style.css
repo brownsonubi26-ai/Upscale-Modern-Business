@@ -4,18 +4,31 @@
     box-sizing: border-box;
 }
 
-.navbar {
-z-index: 5; 
-background-color:rgba(7, 12, 21, 0.3);
+html {
+    font-size: 62.5%;
+}
 
+.navbar {
+z-index: 100; 
+background-color:rgba(7, 12, 21, 0.5);
+height: 8rem !important;
+font-size: rem;
+}
+
+.navbar-nav .nav-item {
+    padding: 0 1.5rem;
 }
 
 .navbar-brand {
      color: white !important;
+     font-size: 3rem !important;
+     font-family: "Roboto", sans-serif;
 }
 
 .nav-link {
     color: white !important;
+    font-size: 1.6rem !important;
+    font-family: "Roboto", sans-serif;
 }
 
 #carouselExampleAutoplaying,
@@ -32,12 +45,10 @@ background-color:rgba(7, 12, 21, 0.3);
 .carousel-item::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6); /* 0.4 = opacity, increase for darker */
+    inset: 0;
+    background: rgba(0, 0, 0, 0.712); 
     z-index: 2;
+    pointer-events: none;
 }
 
 .carousel-item img {
@@ -45,3 +56,36 @@ background-color:rgba(7, 12, 21, 0.3);
     height: 100%;
     object-fit: cover;
 }
+
+.carousel-text { 
+    transform: translate(-50%, -50%);
+    z-index: 5; 
+    color: white;
+  } 
+
+  .btn {
+    font-size: 1.4rem !important;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .text-1 { 
+    font-size: 5.8rem;
+    font-family: Nunito,sans-serif;
+    font-weight: 600;
+  }
+
+  .border {
+    width: 10rem;
+    margin-top: 2rem;
+  }
+
+  .text-2 {
+    margin-top: 2rem;
+    width: 70rem;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .btn1  {
+    margin-top: 2rem;
+    width: 15rem;
+  }
